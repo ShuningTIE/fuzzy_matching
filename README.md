@@ -16,9 +16,11 @@ This project aims to identify potential matches between a firm's largest custome
 
 1. Extract location names (province/city) from customer and AR buyer names.
 2. Filter out unmatched locations.
-3. Use `fuzzywuzzy` to compute name similarity scores.
-4. Choose a threshold to retain likely matches (e.g. score ≥ 85).
-5. Output a final matched list for manual review.
+3. Use `Jieba` to seperate the Chinese words.
+4. Normalize the English names.
+5. Use `fuzzywuzzy` to compute name similarity scores.
+6. Choose a threshold to retain likely matches (e.g. score ≥ 85).
+7. Output a final matched list for manual review.
 
 ## Dependencies
 
